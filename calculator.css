@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e3eb;
+}
+
+.container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #d4d8e0);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    transition: transform 0.3s;
+    box-sizing: border-box;
+}
+
+.display {
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #000e1a;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 5px 5px 10px #d4d8e0, inset -5px -5px 10px #ffffff;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: #e8e8e8;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    transition: background-color 0.3s,color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.buttons button:hover {
+    background-color: #73bcfc;
+    color: #e0e3eb;
+}
+
+.operator {
+    color: #2f9fff;
+}
